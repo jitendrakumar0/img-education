@@ -128,6 +128,9 @@
         & .searchimg{
         width: 20px;
         height: 20px;
+        &:hover{
+            cursor: pointer;
+        }
         }
     }
     & .carticon{
@@ -135,6 +138,9 @@
             width: 20px;
             height: 20px;
             filter: brightness(0.1);
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     & .adminicon{
@@ -145,6 +151,9 @@
         & .proimg{
         width: 100%;
         height: 100%;
+        &:hover{
+            cursor: pointer;
+        }
         }
     }
     & .prodropimg{
@@ -204,6 +213,11 @@
 .searchoffcanvas{
     height: 500px !important;
     background-color: $white;
+    & .closebtntxt{
+        font-size: 18px;
+        font-weight: 600;
+        color: $gray-600;
+    }
     & .inp{
         height: 50px !important;
     }
@@ -411,6 +425,10 @@
         width: 50%;
         // height: 50px;
     }
+    & .menuclosebtn{
+        width: 10px;
+        height: 10px;
+    }
     & .menuoffcanvasbody{
         padding: 10px 0px 0px 0;
     & .menucollapseone{
@@ -444,6 +462,24 @@
             }
         }
     }
+    }
+    .offcanvas-footer{
+        & .menulogout{
+            text-decoration: none;
+            color: $gray-700;
+            font-weight: 700;
+            font-size: 15px;
+            &:hover{
+                color: $danger;
+            }
+                & .menulogoutimg{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                    & .menulogouttxt{
+                    }
+                }
+            }
     }
 }
 @mixin navbar-mixin-min-sm(){
