@@ -20,8 +20,8 @@
         height: 145px;
     }
     & .heropagerytimgcontainer{
-        width: 500px;
-        height: 600px;
+        // width: 500px;
+        // height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,6 +92,506 @@
     }
 
 }
+
+@mixin herosection-mixin-min-sm(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-md(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-lg(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-xl(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-min-xxl(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-xl(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    margin-bottom: 20px !important;
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-1300(){
+    .herobackground{
+   
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+               
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                   
+                }
+            }
+            & .leftmaintxt{
+                    
+            }
+            & .leftsubtxt{
+                   
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-lg(){
+    .herobackground{
+   
+        &::after{
+           
+        }
+        & .heropagerytimgcontainer{
+           
+            &::after{
+                width: unset !important;
+                height: unset !important;
+            }
+            & .heropagerytimg{
+                
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+                width: 100% !important;
+                
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                    font-size: 15px !important;
+                }
+            }
+            & .leftmaintxt{
+                    font-size: 38px !important;
+            }
+            & .leftsubtxt{
+                    font-size: 15px !important;
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    padding: 8px 16px !important;
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-md(){
+    .herobackground{
+        margin-top: 30px !important;
+        padding-bottom: 0 !important;
+        &::after{
+            background-image: unset !important;
+        }
+        & .herocontainerrow{
+           
+            & .heropagerytimgcontainer{
+               
+                &::after{
+                    
+                }
+                & .heropagerytimg{
+                    
+                }
+            }
+            & .heropagelftside{
+                
+                & .herotrophy{
+                   
+                    & .trophyimg{
+                       
+                    }
+                    & .trophytxt{
+                       
+                    }
+                }
+                & .leftmaintxt{
+                        
+                }
+                & .leftsubtxt{
+                       
+                }
+                & .heroleftbtncontainer{
+                    padding-bottom: 12px !important;
+        
+                    & .heroleftbtn{
+                        
+                    }
+                    
+                }
+            }
+        
+        }
+       
+    }
+}
+@mixin herosection-mixin-max-sm(){
+    .herobackground{
+        padding-bottom: 0 !important;
+        &::after{
+            
+        }
+        & .heropagerytimgcontainer{
+            align-items: end !important;
+            width: unset !important;
+            height: unset !important;
+            &::after{
+                
+            }
+            & .heropagerytimg{
+
+            }
+        }
+        & .heropagelftside{
+            
+            & .herotrophy{
+                width: 100% !important;
+                & .trophyimg{
+                   
+                }
+                & .trophytxt{
+                    font-size: 12px !important;
+                }
+            }
+            & .leftmaintxt{
+                    font-size: 20px !important;
+            }
+            & .leftsubtxt{
+                    font-size: 12px !important;
+            }
+            & .heroleftbtncontainer{
+                
+    
+                & .heroleftbtn{
+                    padding: 4px 8px !important;
+                    font-size: 12px !important;
+                    margin-top: 10px !important;
+                    margin-bottom: 20px !important;
+                }
+                
+            }
+        }
+    
+    }
+}
+@mixin herosection-mixin-max-xs(){
+    .herobackground{
+   
+    &::after{
+        
+    }
+    & .heropagerytimgcontainer{
+       
+        &::after{
+            
+        }
+        & .heropagerytimg{
+            width: 72% !important;
+        }
+    }
+    & .heropagelftside{
+        
+        & .herotrophy{
+            margin-top: 30px;
+            & .trophyimg{
+               
+            }
+            & .trophytxt{
+                font-size: 16px !important;
+            }
+        }
+        & .leftmaintxt{
+                font-size: 30px !important;
+                text-align: center;
+        }
+        & .leftsubtxt{
+                font-size: 15px !important;
+                text-align: center;
+        }
+        & .heroleftbtncontainer{
+            text-align: center;
+
+            & .heroleftbtn{
+                padding: 11px 15px !important;
+            }
+            
+        }
+    }
+
+}
+}
+
  .categoriescontainer{
     flex-direction: column;
     position: relative;
@@ -106,8 +606,8 @@
         }
     }
     & .categorymainheading{
-        font-size: 40px;
-        font-weight: 800;
+        font-size: 35px;
+        font-weight: 700;
         margin-top: 20px;
         margin-bottom: 30px;
         text-align: center;
@@ -129,25 +629,25 @@
             flex-direction: column;
             & .cardiconscontainer{
                 width: 100px;
-                height: 100px;
+                height: 70px;
+                text-align: center;
                 & .cardimg{
                     vertical-align: middle;
                     max-width: 100%;
-                    height: auto;
+                    height: 70px;
                 }
             }
             & .cardmainheading{
                 color: $black;
-                font-size: 20px;
-                font-weight: 800;
+                font-size: 18px;
+                font-weight: 700;
                 width: 100%;
                 padding-top: 10px;
             }
             & .cardsubheading{
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 600;
                 color: $black;
-                margin-top: 10px;
                 & .cardarrowcontainer{
                     & .arrowimg{
                         width: 10px;
@@ -159,3 +659,687 @@
         }
     }
 }
+
+
+
+@mixin categorysection-mixin-min-sm(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-md(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-lg(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-xl(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-min-xxl(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-xl(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-1300(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-lg(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+                padding: 8px 16px !important;
+            }
+        }
+        & .categorymainheading{
+            font-size: 28px;
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-md(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+                margin-top: 35px;
+            }
+        }
+        & .categorymainheading{
+            font-size: 22px;
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-sm(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+                // padding: 8px 16px !important;
+                // font-size: 12px !important;
+                display: none;
+            }
+        }
+        & .categorymainheading{
+            
+            font-size: 22px !important;
+            margin-top: 30px !important;
+        }
+    }
+    .cardcontainer{
+        padding: 35px 40px !important;
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                    font-size: 15px !important;
+                }
+                & .cardsubheading{
+                    font-size: 12px !important;
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin categorysection-mixin-max-xs(){
+    .categoriescontainer{
+    
+        & .categorybtncontainer{
+            & .categorybtn{
+               
+            }
+        }
+        & .categorymainheading{
+            font-size: 24px!important;
+            margin-top: 30px !important;
+            
+        }
+    }
+    .cardcontainer{
+        
+        & .cardanchor{
+           
+            & .cardinner{
+                
+                & .cardiconscontainer{
+                    
+                    & .cardimg{
+                        
+                    }
+                }
+                & .cardmainheading{
+                   
+                }
+                & .cardsubheading{
+                    
+                    & .cardarrowcontainer{
+                        & .arrowimg{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.topcoursesbg{
+    background-image: url(../img/homebackground.webp);
+    & .topcoursebtncontainer{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        & .topcoursebtn{
+            background: linear-gradient(to right, $theme1, $theme2);
+            border:none;
+            color: $white;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 11px 45px;
+        }
+    }
+    & .topcoursemainhead{
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    & .cardborder{
+        padding: 10px 10px 0px 10px !important;
+        & .lessonsandpeoplecontainer{
+            padding-top: 10px;
+            & .lessons{
+                font-size: 15px;
+                color: $gray-600;
+                font-weight: 500;
+                & .bookicon{
+                    width: 25px !important;
+                    height: 25px !important;
+                    margin-right:5px;
+                }
+            }
+            & .people{
+                font-size: 15px;
+                color: $gray-600;
+                font-weight: 500;
+                & .peopleicon{
+                    width: 25px !important;
+                    height: 25px !important;
+                    margin-left: 20px;
+                    margin-right:5px;
+                }
+            }
+        }
+        & .cardimgcontainer{
+            text-decoration: none;
+            color: $black;
+            & .card-body{
+                padding: 10px 10px 0px 0 ;
+                & .cardmainhead{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-top: 5px;
+                }
+                & .cardpara{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                & .reviewscontainer{
+                    & .reviewul{
+                        list-style: none;
+                        & .reviewli{
+                            & .starscontainer{
+                                & .starimg{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                                & .totalreview{
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    color: $gray-600;
+                                }
+                            }
+                        }
+                        & .bookmarkclass{
+                            width: 10px;
+                            height: 10px;
+                            margin-left: auto;
+                            margin-top: 10px;
+                            filter: brightness(0.1);
+                        }
+                    }   
+                }
+                & .bottomdata{
+                    margin-top: 20px;
+                }  
+            }
+        }
+       
+        // &:hover .cardhover{
+        //     display: block !important;
+        // }
+    }
+   & .cardhover{
+    padding: 20px;
+    & .cardmainhead{
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 15px;
+    }
+    & .bottom{
+        font-size: 15px;
+        font-weight: 800;
+        color: $gray-600;
+        padding-top: 0px;
+        & .dollar{
+            font-size: 15px;
+            font-weight: 800;
+            color: $gray-400;
+            margin-left: 8px;
+            padding-top: 0px;
+        }
+    } 
+    & .cartimgg{
+        width: 15px;
+        height: 15px;
+        filter: brightness(0.1);
+    }
+    & .cartclass{
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+     & .toplearnclass{
+        background: linear-gradient(to right, $theme1, $theme2);
+        border:none;
+        border-radius: 5px;
+        padding: 10px 26px;
+        color: $white;
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 5px !important;
+        & .rightarrowbottom{
+            width: 10px;
+            height: 10px;
+        }
+    }
+    & .cardpara{
+        font-size: 15px;
+        font-weight: 500;
+        color: $gray-600;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    & .icontxt{
+        font-size: 15px;
+        font-weight: 600;
+        // margin-left: 5px;
+        & .signalpic{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+        & .menupicc{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+
+        }
+        & .clockpic{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+        & .wishpic{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+
+        }
+    }
+    & .cardproimgcontainer{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        & .cardproimg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+    & .prosidetxt{
+        font-size: 15px;
+        font-weight: 600;
+        color: $gray-600    ;
+    }
+    & .lessonsandpeoplecontainer{
+        margin-top: 10px;
+        & .lessons{
+            font-size: 15px;
+            color: $gray-600;
+            font-weight: 500;
+            & .bookicon{
+                width: 15px !important;
+                height: 15px !important;
+                margin-right:5px;
+            }
+        }
+        & .people{
+            font-size: 15px;
+            color: $gray-600;
+            font-weight: 500;
+            & .peopleicon{
+                width: 15px !important;
+                height: 15px !important;
+                margin-left: 20px;
+                margin-right:5px;
+            }
+        }
+    }
+   }
+    }
+
+
+
+// @mixin xxxxxxxx-mixin-min-sm(){}
+// @mixin xxxxxxxx-mixin-min-md(){}
+// @mixin xxxxxxxx-mixin-min-lg(){}
+// @mixin xxxxxxxx-mixin-min-xl(){}
+// @mixin xxxxxxxx-mixin-min-xxl(){}
+// @mixin xxxxxxxx-mixin-max-xl(){}
+// @mixin xxxxxxxx-mixin-max-1300(){}
+// @mixin xxxxxxxx-mixin-max-lg(){}
+// @mixin xxxxxxxx-mixin-max-md(){}
+// @mixin xxxxxxxx-mixin-max-sm(){}
+// @mixin xxxxxxxx-mixin-max-xs(){}
+
+
+
