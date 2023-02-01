@@ -6,6 +6,9 @@
   @include navbar-mixin-min-sm();
   @include herosection-mixin-min-sm();
   @include categorysection-mixin-min-sm();
+  @include topcourses-mixin-min-sm();
+  @include chooseussection-mixin-min-sm();
+  @include eventsection-mixin-min-sm();
   // @include heading-fs-12-mixin-min-sm();
 }
 
@@ -14,6 +17,9 @@
   @include navbar-mixin-min-md();
   @include navbar-mixin-min-md();
   @include categorysection-mixin-min-md();
+  @include topcourses-mixin-min-md();
+  @include chooseussection-mixin-min-md();
+  @include eventsection-mixin-min-md();
   // @include heading-fs-12-mixin-min-md();
 }
 
@@ -22,6 +28,9 @@
   @include navbar-mixin-min-lg();
   @include herosection-mixin-min-lg();
   @include categorysection-mixin-min-lg();
+  @include topcourses-mixin-min-lg();
+  @include chooseussection-mixin-min-lg();
+  @include eventsection-mixin-min-lg();
   // @include heading-fs-12-mixin-min-lg();
 }
 
@@ -30,6 +39,9 @@
   @include navbar-mixin-min-xl();
   @include herosection-mixin-min-xl();
   @include categorysection-mixin-min-xl();
+  @include topcourses-mixin-min-xl();
+  @include chooseussection-mixin-min-xl();
+  @include eventsection-mixin-min-xl();
   // @include heading-fs-12-mixin-min-xl();
 }
 
@@ -38,6 +50,9 @@
   @include navbar-mixin-min-xxl();
   @include herosection-mixin-min-xxl();
   @include categorysection-mixin-min-xxl();
+  @include topcourses-mixin-min-xxl();
+  @include chooseussection-mixin-min-xxl();
+  @include eventsection-mixin-min-xxl();
   // @include heading-fs-12-mixin-min-xxl();
 }
 
@@ -46,6 +61,9 @@
   @include navbar-mixin-max-xl();
   @include herosection-mixin-max-xl();
   @include categorysection-mixin-max-xl();
+  @include topcourses-mixin-max-xl();
+  @include chooseussection-mixin-max-xl();
+  @include eventsection-mixin-max-xl();
   // @include heading-fs-12-mixin-max-xl();
 }
 
@@ -54,6 +72,9 @@
   @include navbar-mixin-max-1300();
   @include herosection-mixin-max-1300();
   @include categorysection-mixin-max-1300();
+  @include topcourses-mixin-max-1300();
+  @include chooseussection-mixin-max-1300();
+  @include eventsection-mixin-max-1300();
 }
 
 // Large devices (desktops, less than 1200px)
@@ -61,6 +82,9 @@
   @include navbar-mixin-max-lg();
   @include herosection-mixin-max-lg();
   @include categorysection-mixin-max-lg();
+  @include topcourses-mixin-max-lg();
+  @include chooseussection-mixin-max-lg();
+  @include eventsection-mixin-max-lg();
   // @include heading-fs-12-mixin-max-lg();
 }
 
@@ -69,6 +93,9 @@
   @include navbar-mixin-max-md();
   @include herosection-mixin-max-md();
   @include categorysection-mixin-max-md();
+  @include topcourses-mixin-max-md();
+  @include chooseussection-mixin-max-md();
+  @include eventsection-mixin-max-md();
   // @include heading-fs-12-mixin-max-md();
 }
 
@@ -77,6 +104,9 @@
   @include navbar-mixin-max-sm();
   @include herosection-mixin-max-sm();
   @include categorysection-mixin-max-sm();
+  @include topcourses-mixin-max-sm();
+  @include chooseussection-mixin-max-sm();
+  @include eventsection-mixin-max-sm();
   // @include heading-fs-12-mixin-max-sm();
 }
 
@@ -85,6 +115,9 @@
   @include navbar-mixin-max-xs();
   @include herosection-mixin-max-xs();
   @include categorysection-mixin-max-xs();
+  @include topcourses-mixin-max-xs();
+  @include chooseussection-mixin-max-xs();
+  @include eventsection-mixin-max-xs();
   // @include heading-fs-12-mixin-max-xs();
 }
 

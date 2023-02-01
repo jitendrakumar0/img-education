@@ -591,7 +591,7 @@
 
 }
 }
-
+// category section
  .categoriescontainer{
     flex-direction: column;
     position: relative;
@@ -1107,9 +1107,11 @@
     }
 }
 
-
+// top courses section
 .topcoursesbg{
     background-image: url(../img/homebackground.webp);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     & .topcoursebtncontainer{
         margin-top: 30px;
         display: flex;
@@ -1188,8 +1190,8 @@
                             }
                         }
                         & .bookmarkclass{
-                            width: 10px;
-                            height: 10px;
+                            width: 20px;
+                            height: 15px;
                             margin-left: auto;
                             margin-top: 10px;
                             filter: brightness(0.1);
@@ -1202,16 +1204,16 @@
             }
         }
        
-        // &:hover .cardhover{
-        //     display: block !important;
-        // }
+        &:hover .cardhover{
+            display: block !important;
+        }
     }
    & .cardhover{
     padding: 20px;
     & .cardmainhead{
         font-size: 20px;
         font-weight: 800;
-        margin-top: 15px;
+        margin-top: 10px;
     }
     & .bottom{
         font-size: 15px;
@@ -1254,8 +1256,17 @@
         font-size: 15px;
         font-weight: 500;
         color: $gray-600;
-        margin-top: 15px;
+        margin-top: 7px;
         margin-bottom: 15px;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box !important;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+          }
     }
     & .icontxt{
         font-size: 15px;
@@ -1285,8 +1296,8 @@
         }
     }
     & .cardproimgcontainer{
-        width: 40px;
-        height: 40px;
+        width: 43px;
+        height: 43px;
         border-radius: 50%;
         overflow: hidden;
         & .cardproimg{
@@ -1329,17 +1340,3352 @@
 
 
 
-// @mixin xxxxxxxx-mixin-min-sm(){}
-// @mixin xxxxxxxx-mixin-min-md(){}
-// @mixin xxxxxxxx-mixin-min-lg(){}
-// @mixin xxxxxxxx-mixin-min-xl(){}
-// @mixin xxxxxxxx-mixin-min-xxl(){}
-// @mixin xxxxxxxx-mixin-max-xl(){}
-// @mixin xxxxxxxx-mixin-max-1300(){}
-// @mixin xxxxxxxx-mixin-max-lg(){}
-// @mixin xxxxxxxx-mixin-max-md(){}
-// @mixin xxxxxxxx-mixin-max-sm(){}
-// @mixin xxxxxxxx-mixin-max-xs(){}
+@mixin topcourses-mixin-min-sm(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-md(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-lg(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-xl(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            font-size: 14.5px !important;
+            -webkit-line-clamp: 4 !important;
+            
+        }
+        & .icontxt{
+            font-size: 14.5px !important;
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-min-xxl(){
+    .topcoursesbg{
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 35px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            font-size: 15px !important;
+            -webkit-line-clamp: 5 !important;
+            
+        }
+        & .icontxt{
+            font-size: 15px !important;
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-xl(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 35px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-1300(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 35px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-lg(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 28px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-md(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 24px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            -webkit-line-clamp: 6 !important;
+        
+            
+        }
+        & .icontxt{
+            font-size: 14px !important;
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+            
+            font-size: 14px !important;
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-sm(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+              
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 24px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            -webkit-line-clamp: 4 !important;
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+@mixin topcourses-mixin-max-xs(){
+    .topcoursesbg{
+    
+        & .topcoursebtncontainer{
+            
+            & .topcoursebtn{
+            }
+        }
+        & .topcoursemainhead{
+            font-size: 24px !important;
+            font-weight: 700 !important;
+        }
+        & .cardborder{
+            
+            & .lessonsandpeoplecontainer{
+    
+                & .lessons{
+                    
+                    & .bookicon{
+                       
+                    }
+                }
+                & .people{
+                    
+                    & .peopleicon{
+    
+                    }
+                }
+            }
+            & .cardimgcontainer{
+                
+                & .card-body{
+                
+                    & .cardmainhead{
+                       
+                    }
+                    & .cardpara{
+                        
+                    }
+                    & .reviewscontainer{
+                        & .reviewul{
+                            & .reviewli{
+                                & .starscontainer{
+                                    & .starimg{
+                                        
+                                    }
+                                    & .totalreview{
+                                        
+                                    }
+                                }
+                            }
+                            & .bookmarkclass{
+                              
+                            }
+                        }   
+                    }
+                    & .bottomdata{
+                
+                    }  
+                }
+            }
+           
+            &:hover .cardhover{
+                
+                display: flex !important;
+                flex-direction: column;
+            }
+        }
+       & .cardhover{
+        & .cardmainhead{
+            
+        }
+        & .bottom{
+            
+            & .dollar{
+               
+            }
+        } 
+        & .cartimgg{
+            
+        }
+        & .cartclass{
+           
+        }
+         & .toplearnclass{
+         
+            & .rightarrowbottom{
+                
+            }
+        }
+        & .cardpara{
+            -webkit-line-clamp: 6 !important;
+        
+            
+        }
+        & .icontxt{
+           
+            & .signalpic{
+                
+            }
+            & .menupicc{
+                
+    
+            }
+            & .clockpic{
+                
+            }
+            & .wishpic{
+                
+    
+            }
+        }
+        & .cardproimgcontainer{
+            
+            & .cardproimg{
+            
+            }
+        }
+        & .prosidetxt{
+        }
+        & .lessonsandpeoplecontainer{
+            & .lessons{
+                & .bookicon{
+                    
+                }
+            }
+            & .people{
+                & .peopleicon{
+                    
+                }
+            }
+        }
+       }
+        }
+}
+
+// About us section
+.aboutusfluid{
+    & .aboutussection{
+        & .aboutleftcontainer{
+            & .aboutimg1{
+                // position: absolute;
+            }
+            & .aboutimg2{
+                border-radius: 5px;
+                // position: absolute;
+
+            }
+            & .aboutimg3{
+                // position: absolute;
+
+            }
+        }
+    }
+}
+// choose us section
+.chooseusfluid{
+    background-image: url(../img/homebackground.webp);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    & .colafter{
+        
+    }
+    & .hangerline{
+        position: relative;
+        &::before{
+            content: "";
+            width: 100%;
+            height: 4px;
+            left: 0;
+            top: 0;
+            background-image: linear-gradient(to right, $theme1, $theme2);
+            // background-image: radial-gradient(to right, $theme1, $theme2);
+        }
+        & .hangingcard{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            &::before{
+                content: "";
+                width: 3px;
+                height: 52px;
+                background-image: linear-gradient($theme1, $theme2);
+                left: 50%;
+                bottom: 100%;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                border: 4px solid $theme1;
+                border-radius: 100%;
+                left: 50%;
+                bottom: calc(100% + 41px);
+                transform: translateX(-50%);
+                background: #f9f9ff;
+            }
+            & .hanginginpiccontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: $white;
+                box-shadow: 1px 1px 7px 0px  $gray-600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                & .hangingcardprofile{
+                    width: 80%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+            & .counter{
+                font-size: 30px;
+                font-weight: 800;
+                margin-bottom: 10px;
+            }
+            & .hangingcardbottom{
+                font-size: 20px;
+                font-weight: 700;
+                color: $gray-600;
+            }
+        }
+        & .hangingcardd{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            &::before{
+                content: "";
+                width: 3px;
+                height: 16px;
+                background-image: linear-gradient($theme1, $theme2);
+                left: 50%;
+                bottom: 100%;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                border: 4px solid $theme1;
+                border-radius: 100%;
+                left: 50%;
+                bottom: calc(100% + 8px);
+                transform: translateX(-50%);
+                background: #f9f9ff;
+            }
+            & .hanginginpiccontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: $white;
+                box-shadow: 1px 1px 7px 0px  $gray-600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                & .hangingcardprofile{
+                    width: 80%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+            & .counter{
+                font-size: 30px;
+                font-weight: 800;
+                margin-bottom: 10px;
+            }
+            & .hangingcardbottom{
+                font-size: 20px;
+                font-weight: 700;
+                color: $gray-600;
+            }
+        }
+    }
+
+}
+// event section
+.owlfliud{
+    & .demo{
+       & .owl-stage-outer{
+        height: 100%;
+        & .owl-stage{
+            height: 100%;
+           & .owl-item{
+            height: 100%;
+            & .item{
+                &::after{
+                    content: '';
+                    background-color: rgba($black, .3);
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+                & .owlimagecontainer{
+                    border-radius: 5px;
+                    & .owlimg{
+                        
+                    }
+                    & .eventdate{
+                        width: 70px;
+                        height: 65px;
+                        border-radius: 5px;
+                        background-color: $white;
+                        z-index: 999;
+                        position: absolute;
+                        top: 5%;
+                        right: 5%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & .eventdatebg{
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                    }
+                    & .eventtiming{
+                        position: absolute;
+                        bottom: 15%;
+                        left: 2%;
+                        z-index: 999;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        & .eventtimingimg{
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 5px;
+                        }
+                        & .locationimgg{
+                            width: 15px;
+                            height: 15px;
+                            margin-left: 20px;
+                        }
+                    }
+                    & .bottomtxt{
+                        position: absolute;
+                        bottom: 5%;
+                        left: 2%;
+                        color: $white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        z-index: 999;
+                    }
+                }
+            }
+           }
+        }
+       }
+    }
+}
+.owlcardcontainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    & .owlimg{
+        position: relative;
+    }
+    & .owlcardimg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::after{
+        content: '';
+        background-color: rgba($black, .3);
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    & .owlcarddate{
+        position: absolute;
+        color: white;
+        z-index: 999;
+        top: 2%;
+        left: 5%;
+        font-size: 15px;
+        font-weight:600;
+    }
+    & .owlcardbottomhead{
+        position: absolute;
+        bottom: 10%;
+        color: white;
+        z-index: 999;
+        font-size: 15px;
+        font-weight: 600;
+        left: 5%;
+        & .owlcardbottomimg{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        }
+    }
+    & .owlcardbottomsubhead{
+        position: absolute;
+        bottom: 3%;
+        color: white;
+        z-index: 999;
+        font-size: 15px;
+        font-weight: 600;
+        left: 5%;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box !important;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+          }
+    }
+}
+.owl-nav{
+    & .owl-prev{
+        position: absolute !important;
+        top: 50% !important;
+        top: 50% !important;
+        left: 10% !important;
+        opacity: 1 !important ;
+        // &::after{
+        //     content: '';
+        //     background-image: url(../img/whiteArrow-.svg);
+        //     opacity: 0.9 !important;
+        // }
+        
+    }
+    & .owl-next{
+        position: absolute !important;
+        top: 50% !important;
+        right: 10% !important;
+    }
+}
+.owlarrowsize{
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    z-index: 999;
+}
+
+
+
+@mixin chooseussection-mixin-min-sm(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-md(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-lg(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-xl(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-min-xxl(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-xl(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-1300(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-lg(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-md(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-sm(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+@mixin chooseussection-mixin-max-xs(){
+    .chooseusfluid{
+    
+        & .colafter{
+            
+        }
+        & .hangerline{
+            
+            &::before{
+               
+            }
+            & .hangingcard{
+               
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                       
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+            & .hangingcardd{
+                
+                &::before{
+                    
+                }
+                &::after{
+                    
+                }
+                & .hanginginpiccontainer{
+                    
+                    & .hangingcardprofile{
+                        
+                    }
+                }
+                & .counter{
+                    
+                }
+                & .hangingcardbottom{
+                    
+                }
+            }
+        }
+    
+    }
+}
+
+
+
+@mixin eventsection-mixin-min-sm(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-md(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-lg(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-xl(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-min-xxl(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-xl(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-1300(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-lg(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-md(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-sm(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+@mixin eventsection-mixin-max-xs(){
+    // owl
+    .owlfliud{
+        & .demo{
+           & .owl-stage-outer{
+            
+            & .owl-stage{
+                
+               & .owl-item{
+               
+                & .item{
+                    &::after{
+                        
+                    }
+                    & .owlimagecontainer{
+                        
+                        & .owlimg{
+                            
+                        }
+                        & .eventdate{
+                           
+                            & .eventdatebg{
+                                
+                            }
+                        }
+                        & .eventtiming{
+                           
+                            & .eventtimingimg{
+                                
+                            }
+                            & .locationimgg{
+                               
+                            }
+                        }
+                        & .bottomtxt{
+                            
+                        }
+                    }
+                }
+               }
+            }
+           }
+        }
+    }
+    .owlcardcontainer{
+       
+        & .owlimg{
+            
+        }
+        & .owlcardimg{
+            
+        }
+        &::after{
+           
+        }
+        & .owlcarddate{
+           
+        }
+        & .owlcardbottomhead{
+            
+            & .owlcardbottomimg{
+            
+            }
+        }
+        & .owlcardbottomsubhead{
+           
+            &.text-ellipsis--2{
+    
+            }
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            
+        }
+        & .owl-next{
+            
+        }
+    }
+    .owlarrowsize{
+        
+    }
+}
+
+
+
+
+@mixin chooseussection-mixin-min-sm(){}
+@mixin chooseussection-mixin-min-md(){}
+@mixin chooseussection-mixin-min-lg(){}
+@mixin chooseussection-mixin-min-xl(){}
+@mixin chooseussection-mixin-min-xxl(){}
+@mixin chooseussection-mixin-max-xl(){}
+@mixin chooseussection-mixin-max-1300(){}
+@mixin chooseussection-mixin-max-lg(){}
+@mixin chooseussection-mixin-max-md(){}
+@mixin chooseussection-mixin-max-sm(){}
+@mixin chooseussection-mixin-max-xs(){}
 
 
 
