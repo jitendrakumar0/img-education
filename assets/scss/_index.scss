@@ -10,10 +10,8 @@
         content: "";
         background-image: url(../img/CURVE.svg);
         position: absolute;
-        height: 200px;
-        // top: -69px;
-        bottom: -44px;
-        width: 150vw;
+        bottom: 0;
+        background-repeat: no-repeat;
         background-position: center;
         width: 100vw;
         z-index: 99;
@@ -2839,24 +2837,8 @@
             background-image: linear-gradient(to right, $theme1, $theme2);
             // background-image: radial-gradient(to right, $theme1, $theme2);
         }
-        & .hangingcard{
+        & .hangerCardWrapper {
             position: relative;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: $white;
-            &::before{
-                content: "";
-                width: 3px;
-                height: 52px;
-                background-image: linear-gradient($theme1, $theme2);
-                left: 50%;
-                bottom: 100%;
-                position: absolute;
-                transform: translateX(-50%);
-            }
             &::after{
                 position: absolute;
                 content: "";
@@ -2865,10 +2847,33 @@
                 border: 4px solid $theme1;
                 border-radius: 100%;
                 left: 50%;
-                bottom: calc(100% + 41px);
+                // bottom: calc(100% + 41px);
+                bottom: 98%;
                 transform: translateX(-50%);
                 background: #f9f9ff;
             }
+            
+            &::before{
+                content: "";
+                width: 3px;
+                height: 52px;
+                background-image: linear-gradient($theme1, $theme2);
+                left: 50%;
+                top: 0%;
+                position: absolute;
+                transform: translateX(-50%);
+                animation: hangStop 2s infinite linear;
+            }
+        }
+        & .hangingcard{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            animation: hang 2s infinite linear;
             & .hanginginpiccontainer{
                 width: 100px;
                 height: 100px;
@@ -2905,28 +2910,29 @@
             justify-content: center;
             align-items: center;
             background-color: $white;
-            &::before{
-                content: "";
-                width: 3px;
-                height: 16px;
-                background-image: linear-gradient($theme1, $theme2);
-                left: 50%;
-                bottom: 100%;
-                position: absolute;
-                transform: translateX(-50%);
-            }
-            &::after{
-                position: absolute;
-                content: "";
-                width: 20px;
-                height: 20px;
-                border: 4px solid $theme1;
-                border-radius: 100%;
-                left: 50%;
-                bottom: calc(100% + 8px);
-                transform: translateX(-50%);
-                background: #f9f9ff;
-            }
+            animation: hang 2s infinite linear;
+            // &::before{
+            //     content: "";
+            //     width: 3px;
+            //     height: 16px;
+            //     background-image: linear-gradient($theme1, $theme2);
+            //     left: 50%;
+            //     bottom: 100%;
+            //     position: absolute;
+            //     transform: translateX(-50%);
+            // }
+            // &::after{
+            //     position: absolute;
+            //     content: "";
+            //     width: 20px;
+            //     height: 20px;
+            //     border: 4px solid $theme1;
+            //     border-radius: 100%;
+            //     left: 50%;
+            //     bottom: calc(100% + 17px);
+            //     transform: translateX(-50%);
+            //     background: #f9f9ff;
+            // }
             & .hanginginpiccontainer{
                 width: 100px;
                 height: 100px;
@@ -2958,172 +2964,40 @@
     }
 
 }
-// event section
-.owlfliud{
-    & .demo{
-       & .owl-stage-outer{
-        height: 100%;
-        & .owl-stage{
-            height: 100%;
-           & .owl-item{
-            height: 100%;
-            & .item{
-                &::after{
-                    content: '';
-                    background-color: rgba($black, .3);
-                    position: absolute;
-                    top:0;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
-                }
-                & .owlimagecontainer{
-                    border-radius: 5px;
-                    & .owlimg{
-                        
-                    }
-                    & .eventdate{
-                        width: 70px;
-                        height: 65px;
-                        border-radius: 5px;
-                        background-color: $white;
-                        z-index: 999;
-                        position: absolute;
-                        top: 5%;
-                        right: 5%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        & .eventdatebg{
-                            font-size: 15px;
-                            font-weight: 700;
-                        }
-                    }
-                    & .eventtiming{
-                        position: absolute;
-                        bottom: 15%;
-                        left: 2%;
-                        z-index: 999;
-                        color: white;
-                        font-size: 20px;
-                        font-weight: 600;
-                        & .eventtimingimg{
-                            width: 20px;
-                            height: 20px;
-                            margin-right: 5px;
-                        }
-                        & .locationimgg{
-                            width: 15px;
-                            height: 15px;
-                            margin-left: 20px;
-                        }
-                    }
-                    & .bottomtxt{
-                        position: absolute;
-                        bottom: 5%;
-                        left: 2%;
-                        color: $white;
-                        font-size: 20px;
-                        font-weight: 600;
-                        z-index: 999;
-                    }
-                }
-            }
-           }
-        }
-       }
+
+@keyframes hang {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
-.owlcardcontainer{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-    & .owlimg{
-        position: relative;
+@keyframes hangStop {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
     }
-    & .owlcardimg{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    25% {
+        transform: translateX(-50%) rotate(5deg);
     }
-    &::after{
-        content: '';
-        background-color: rgba($black, .3);
-        position: absolute;
-        top:0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+    50% {
+        transform: translateX(-50%) rotate(0deg);
     }
-    & .owlcarddate{
-        position: absolute;
-        color: white;
-        z-index: 999;
-        top: 2%;
-        left: 5%;
-        font-size: 15px;
-        font-weight:600;
+    75% {
+        transform: translateX(-50%) rotate(-5deg);
     }
-    & .owlcardbottomhead{
-        position: absolute;
-        bottom: 10%;
-        color: white;
-        z-index: 999;
-        font-size: 15px;
-        font-weight: 600;
-        left: 5%;
-        & .owlcardbottomimg{
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
-        }
+    100% {
+        transform: translateX(-50%) rotate(0deg);
     }
-    & .owlcardbottomsubhead{
-        position: absolute;
-        bottom: 3%;
-        color: white;
-        z-index: 999;
-        font-size: 15px;
-        font-weight: 600;
-        left: 5%;
-        &.text-ellipsis--2{
-            text-overflow:ellipsis;
-            overflow:hidden;
-            // Addition lines for 2 line or multiline ellipsis
-            display: -webkit-box !important;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            white-space: normal;
-          }
-    }
-}
-.owl-nav{
-    & .owl-prev{
-        position: absolute !important;
-        top: 50% !important;
-        top: 50% !important;
-        left: 10% !important;
-        opacity: 1 !important ;
-        // &::after{
-        //     content: '';
-        //     background-image: url(../img/whiteArrow-.svg);
-        //     opacity: 0.9 !important;
-        // }
-        
-    }
-    & .owl-next{
-        position: absolute !important;
-        top: 50% !important;
-        right: 10% !important;
-    }
-}
-.owlarrowsize{
-    width: 30px;
-    height: 30px;
-    font-weight: 600;
-    z-index: 999;
 }
 
 
@@ -3593,14 +3467,16 @@
         & .hangerline{
             
             &::before{
-               
+                display: none !important;
             }
             & .hangingcard{
                
                 &::before{
+                    display: none !important;
                     
                 }
                 &::after{
+                    display: none !important;
                     
                 }
                 & .hanginginpiccontainer{
@@ -3619,10 +3495,11 @@
             & .hangingcardd{
                 
                 &::before{
+                    display: none !important;
                     
                 }
                 &::after{
-                    
+                    display: none !important;
                 }
                 & .hanginginpiccontainer{
                     
@@ -3756,7 +3633,174 @@
     }
 }
 
-
+// event section
+.owlfliud{
+    & .demo{
+       & .owl-stage-outer{
+        height: 100%;
+        & .owl-stage{
+            height: 100%;
+           & .owl-item{
+            height: 100%;
+            & .item{
+                &::after{
+                    content: '';
+                    background-color: rgba($black, .3);
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+                & .owlimagecontainer{
+                    border-radius: 5px;
+                    & .owlimg{
+                        
+                    }
+                    & .eventdate{
+                        width: 75px;
+                        height: 70px;
+                        border-radius: 5px;
+                        background-color: $white;
+                        z-index: 999;
+                        position: absolute;
+                        top: 5%;
+                        right: 2%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & .eventdatebg{
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                    }
+                    & .eventtiming{
+                        position: absolute;
+                        bottom: 15%;
+                        left: 2%;
+                        z-index: 999;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        & .eventtimingimg{
+                            width: 20px;
+                            height: 30px;
+                            margin-right: 5px;
+                        }
+                        & .locationimgg{
+                            width: 25px;
+                            height: 30px;
+                            margin-left: 20px;
+                            margin-right: 5px;
+                        }
+                    }
+                    & .bottomtxt{
+                        position: absolute;
+                        bottom: 5%;
+                        left: 2%;
+                        color: $white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        z-index: 999;
+                    }
+                }
+            }
+           }
+        }
+       }
+    }
+}
+.owlcardcontainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    & .owlimg{
+        position: relative;
+    }
+    & .owlcardimg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::after{
+        content: '';
+        background-color: rgba($black, .3);
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    & .owlcarddate{
+        position: absolute;
+        color: white;
+        z-index: 999;
+        top: 2%;
+        left: 5%;
+        font-size: 15px;
+        font-weight:600;
+    }
+    & .owlcardbottomhead{
+        position: absolute;
+        bottom: 10%;
+        color: white;
+        z-index: 999;
+        font-size: 15px;
+        font-weight: 600;
+        left: 5%;
+        & .owlcardbottomimg{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        }
+    }
+    & .owlcardbottomsubhead{
+        position: absolute;
+        bottom: 3%;
+        color: white;
+        z-index: 999;
+        font-size: 15px;
+        font-weight: 600;
+        left: 5%;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box !important;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+          }
+    }
+}
+.owl-nav{
+    & .owl-prev{
+        position: absolute !important;
+        top: 50% !important;
+        top: 50% !important;
+        left: 2% !important;
+        opacity: 1 !important ;
+        // &::after{
+        //     content: '';
+        //     background-image: url(../img/whiteArrow-.svg);
+        //     opacity: 0.9 !important;
+        // }
+        
+    }
+    & .owl-next{
+        position: absolute !important;
+        top: 50% !important;
+        right: 2% !important;
+    }
+}
+.owlarrowsize{
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    z-index: 999;
+}
 
 @mixin eventsection-mixin-min-sm(){
     // owl
@@ -4672,20 +4716,1402 @@
     }
 }
 
+// our teachers
+.topteachersfluid{
+    background:url(../img/homebackground.webp);
+    & .teambg{
+        padding: 20px;
+        background-color: $white;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        & .teamcontainer{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: $white;
+            & .teampic{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    & .rightpartteamcontainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 7px;
+        background-color: $white;
+        border-radius: 5px;
+        & .rightteampic{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    & .teachername{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    & .subjectname{
+        font-size: 20px;
+        font-weight: 600;
+        color: $blue;
+        margin-bottom: 5px;
+
+    }
+    & .locationcontainer{
+        color: $gray-600;
+        margin-bottom: 15px;
+        font-weight: 600;
+        & .locimgg{
+            margin-right: 5px;
+        }
+    }
+    & .paragraph{
+        font-size: 15px;
+        font-weight: 600;
+        color: $gray-600;
+        margin-bottom: 15px;
+        &.text-ellipsis--2{
+            text-overflow:ellipsis;
+            overflow:hidden;
+            // Addition lines for 2 line or multiline ellipsis
+            display: -webkit-box !important;
+            -webkit-line-clamp: 10;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+          }
+    }
+    & .teamiconscontainer{
+        & .anchorclass{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $gray-200;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            & .teamiconimg{
+           
+            }
+        }
+    }
+    & .contactnumbercontainer{
+        & .contactanchor{
+            text-decoration: none;
+            color: $gray-600;
+            font-size: 14px;
+            font-weight: 600;
+            & .numberimg{
+            margin-right: 5px;
+            }
+        }
+    }
+}
+
+@mixin ourteacherssechtion-mixin-min-sm(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-md(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-lg(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-xl(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-min-xxl(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-xl(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            margin-bottom: 0 !important;
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+            margin-bottom: 10px !important;
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7 !important;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-1300(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 7;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-lg(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-md(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-sm(){
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+@mixin ourteacherssechtion-mixin-max-xs(){  
+    .topteachersfluid{
+   
+        & .teambg{
+            
+            & .teamcontainer{
+               
+                & .teampic{
+                    
+                }
+            }
+        }
+        & .rightpartteamcontainer{
+            
+            & .rightteampic{
+               
+            }
+        }
+        & .teachername{
+            
+        }
+        & .subjectname{
+            
+    
+        }
+        & .locationcontainer{
+           
+            & .locimgg{
+                
+            }
+        }
+        & .paragraph{
+            
+            &.text-ellipsis--2{
+                text-overflow:ellipsis;
+                overflow:hidden;
+                // Addition lines for 2 line or multiline ellipsis
+                display: -webkit-box !important;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+        }
+        & .teamiconscontainer{
+            & .anchorclass{
+                
+                & .teamiconimg{
+               
+                }
+            }
+        }
+        & .contactnumbercontainer{
+            & .contactanchor{
+                
+                & .numberimg{
+               
+                }
+            }
+        }
+    }
+}
+
+
+// testimonials
+.testimonialsfluid{
+    background-image: url(../img/homebackground.webp);
+    // background-color:rgb(85, 85, 144);
+    & .testimonialscontainer{
+        background-color: $white;
+        padding: 30px;
+        border-radius: 50px 5px 50px 5px;
+        &:hover{
+            .owl-prev{
+                transform: translateX(-50%);
+                // transition: 3s linear;
+            }
+        }
+        & .testimonialspara{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        & .userpiccontainer{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            & .userpic{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+        }
+        & .username{
+            font-size: 15x;
+            font-weight: 500;
+        }
+    }
+    .owl-nav{
+        & .owl-prev{
+            position: absolute !important;
+            top: 45% !important;
+            left: -1% !important;
+            background-image: linear-gradient(to bottom, $theme1, $theme2) !important;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translateX(-1%);
+            transition: 0.3s linear;
+            // &:hover{
+            //     transform: translateX(-50%);
+            //     transition: 3s linear;
+            // }
+
+        }
+        & .owl-next{
+            position: absolute !important;
+            top: 45% !important;
+            right: -2% !important;
+            background-image: linear-gradient(to bottom, $theme1, $theme2) !important;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+}
 
 
 
-@mixin chooseussection-mixin-min-sm(){}
-@mixin chooseussection-mixin-min-md(){}
-@mixin chooseussection-mixin-min-lg(){}
-@mixin chooseussection-mixin-min-xl(){}
-@mixin chooseussection-mixin-min-xxl(){}
-@mixin chooseussection-mixin-max-xl(){}
-@mixin chooseussection-mixin-max-1300(){}
-@mixin chooseussection-mixin-max-lg(){}
-@mixin chooseussection-mixin-max-md(){}
-@mixin chooseussection-mixin-max-sm(){}
-@mixin chooseussection-mixin-max-xs(){}
 
+@mixin ourteacherssechtion-mixin-min-sm(){}
+@mixin ourteacherssechtion-mixin-min-md(){}
+@mixin ourteacherssechtion-mixin-min-lg(){}
+@mixin ourteacherssechtion-mixin-min-xl(){}
+@mixin ourteacherssechtion-mixin-min-xxl(){}
+@mixin ourteacherssechtion-mixin-max-xl(){}
+@mixin ourteacherssechtion-mixin-max-1300(){}
+@mixin ourteacherssechtion-mixin-max-lg(){}
+@mixin ourteacherssechtion-mixin-max-md(){}
+@mixin ourteacherssechtion-mixin-max-sm(){}
+@mixin ourteacherssechtion-mixin-max-xs(){}
+
+
+
+
+// footer
+.footerfluid{
+    background-color: $black;
+    padding: 50px;
+    & .footerhead{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: $white;
+    }
+    & .footersubhead{
+        font-size: 15px;
+        font-weight: 600;
+        // color: $gray-900;
+        color: $white;
+    }
+    & .footerdivider{
+        width: 100%;
+        height: 1px;
+        background-color: $gray-400;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    & .emailcontainer{
+        text-decoration: none;
+        // color: $black;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 10px;
+        & .infoclass{
+            font-size: 15px;
+            color: $white;
+            font-weight: 600;
+            // color: $gray-600;
+            color: $white; 
+            margin-left: 5px !important;
+        }
+    }
+    & .office{
+            font-size: 15px;
+            color: $white;
+            font-weight: 600;
+    }
+    & .address{
+
+    }
+    & .footerhead{
+
+    }
+    & .categoryanchor{
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        padding-bottom: 20px;
+        // color: $gray-600;
+        color: $white;
+        &:hover{
+            color: red;
+            transform: translatex(10%);
+            transition: 0.3s ease;
+        }
+        // color: $black;
+        color: $white;
+        & .chevanclass{
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+        & .details{
+            text-decoration: none;
+        color: $white;
+        }
+    }
+}
+
+
+
+@mixin footer-mixin-min-sm(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-md(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-lg(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-xl(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-min-xxl(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-xl(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-1300(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-lg(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-md(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-sm(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
+@mixin footer-mixin-max-xs(){
+    .footerfluid{
+   
+        & .footerhead{
+            
+        }
+        & .footersubhead{
+            
+        }
+        & .footerdivider{
+            
+        }
+        & .emailcontainer{
+           
+            & .infoclass{
+                
+            }
+        }
+        & .office{
+                
+        }
+        & .address{
+    
+        }
+        & .footerhead{
+    
+        }
+        & .categoryanchor{
+            
+            &:hover{
+               
+            }
+            
+            & .chevanclass{
+               
+            }
+            & .details{
+               
+            }
+        }
+    }
+}
 
 
