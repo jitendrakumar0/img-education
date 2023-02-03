@@ -1,6 +1,6 @@
 .navbar{
     background-color: $white;
-    box-shadow: 0px 20px 34px lighten($black, 96);
+    // box-shadow: 0px 20px 34px lighten($black, 96);
     position: relative;
     & .studylogoanchor{
         & .studylogo{
@@ -298,7 +298,130 @@
     & .cardpic{
         border-radius: 5px !important;
     }
+
+    
 }
+.mymodal{
+    width: 300px !important;
+    & .contentt{
+        & .modal-header{
+            display: flex !important;
+            border-bottom: unset !important;
+            // justify-content: center !important;
+            align-items: center !important;
+            &.headerr{
+                display: flex !important;
+                justify-content: center !important;
+                & .formhead{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                & .modalhone{
+                    & .mytabs{
+                        display: flex !important;
+                        justify-content: center !important;
+                        // width: 100%;
+                    }
+                    & .btndesign{
+                        background-color: red !important;
+                    }
+                }
+                
+            }
+        }
+        
+        & .bodayofmodal{
+            & .form-label{
+                margin-bottom: 0 !important;
+            }
+            & .modallabel{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px!important;
+            }
+            
+            & .modalinp{
+                margin-bottom: 20px;
+                font-size: 14px;
+                color: $gray-700;
+                margin-bottom: 20px;
+                padding-left: 30px;
+            }
+            & .mailll{
+                position: absolute;
+                top: 10px;
+                left: 8px;
+                /* width: 40px; */
+                height: 16px;
+                z-index: 7;
+
+            }
+            & .holder{
+                & .formcontainer{
+                    margin-bottom: 20px;
+                    & .aa{
+                        font-size: 14px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            & .remember{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            & .rememberanchor{
+                font-size: 14px;
+                margin-bottom: 20px;
+                // text-decoration: none;
+            }
+            & .regbtn{
+                background-image: linear-gradient(to right, $theme1, $theme2);
+                border:none;
+                color: $white;
+                font-size: 14px;
+                border-radius: 5px;
+                padding: 7px 8px;
+                width: 100%;
+                margin-bottom: 0;
+            }
+            & .loginwith{
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 20px;
+            }
+            & .btncontainer{
+                margin-top: 10px;
+                text-align: center;
+                & .facebookbtn{
+                    border:1px solid $black;
+                }
+                & .googlebtn{
+                    border:1px solid $black;
+                }
+            }
+            & .member{
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 40px;
+                & .signanchor{
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+            }
+            & .modal-footer{
+                border-top: none !important;
+                padding-top: 0 !important;
+            }
+        }
+    }
+}
+.secondmodal{
+    width: 300px !important;
+}
+
 .cartoffcanvas{
     width: 400px !important;
     & .cartoffcanvasheader{
