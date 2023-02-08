@@ -17,3 +17,7 @@
 .bodyScrollPart {
   overflow: hidden auto;
 }
+
+.ulofnavtabs::-webkit-scrollbar{
+  display: none;
+}
