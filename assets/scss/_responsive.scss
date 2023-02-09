@@ -16,6 +16,8 @@
   @include aboutusherosection-mixin-min-sm();
   @include aboutushomeworkfluid-mixin-min-sm();
   @include aboutwhywelearnsection-mixin-min-sm();
+  @include aboutAnimBox-mixin-min-sm();
+
   // @include heading-fs-12-mixin-min-sm();
 }
 
@@ -34,6 +36,8 @@
   @include aboutusherosection-mixin-min-md();
   @include aboutushomeworkfluid-mixin-min-md();
   @include aboutwhywelearnsection-mixin-min-md();
+  @include aboutAnimBox-mixin-min-md();
+
   // @include heading-fs-12-mixin-min-md();
 }
 
@@ -52,6 +56,8 @@
   @include aboutusherosection-mixin-min-lg();
   @include aboutushomeworkfluid-mixin-min-lg();
   @include aboutwhywelearnsection-mixin-min-lg();
+  @include aboutAnimBox-mixin-min-lg();
+
   // @include heading-fs-12-mixin-min-lg();
 }
 
@@ -70,6 +76,8 @@
   @include aboutusherosection-mixin-min-xl();
   @include aboutushomeworkfluid-mixin-min-xl();
   @include aboutwhywelearnsection-mixin-min-xl();
+  @include aboutAnimBox-mixin-min-xl();
+
   // @include heading-fs-12-mixin-min-xl();
 }
 
@@ -88,6 +96,8 @@
   @include aboutusherosection-mixin-min-xxl();
   @include aboutushomeworkfluid-mixin-min-xxl();
   @include aboutwhywelearnsection-mixin-min-xxl();
+  @include aboutAnimBox-mixin-min-xxl();
+
   // @include heading-fs-12-mixin-min-xxl();
 }
 
@@ -106,6 +116,8 @@
   @include aboutusherosection-mixin-max-xl();
   @include aboutushomeworkfluid-mixin-max-xl();
   @include aboutwhywelearnsection-mixin-max-xl();
+  @include aboutAnimBox-mixin-max-xl();
+
   // @include heading-fs-12-mixin-max-xl();
 }
 
@@ -124,6 +136,8 @@
   @include aboutusherosection-mixin-max-1300();
   @include aboutushomeworkfluid-mixin-max-1300();
   @include aboutwhywelearnsection-mixin-max-1300();
+  @include aboutAnimBox-mixin-max-1300();
+
 }
 
 // Large devices (desktops, less than 1200px)
@@ -141,6 +155,8 @@
   @include aboutusherosection-mixin-max-lg();
   @include aboutushomeworkfluid-mixin-max-lg();
   @include aboutwhywelearnsection-mixin-max-lg();
+  @include aboutAnimBox-mixin-max-lg();
+
   // @include heading-fs-12-mixin-max-lg();
 }
 
@@ -159,6 +175,8 @@
   @include aboutusherosection-mixin-max-md();
   @include aboutushomeworkfluid-mixin-max-md();
   @include aboutwhywelearnsection-mixin-max-md();
+  @include aboutAnimBox-mixin-max-md();
+
   // @include heading-fs-12-mixin-max-md();
 }
 
@@ -177,6 +195,8 @@
   @include aboutusherosection-mixin-max-sm();
   @include aboutushomeworkfluid-mixin-max-sm();
   @include aboutwhywelearnsection-mixin-max-sm();
+  @include aboutAnimBox-mixin-max-sm();
+
   // @include heading-fs-12-mixin-max-sm();
 }
 
@@ -195,6 +215,8 @@
   @include aboutusherosection-mixin-max-xs();
   @include aboutushomeworkfluid-mixin-max-xs();
   @include aboutwhywelearnsection-mixin-max-xs();
+  @include aboutAnimBox-mixin-max-xs();
+
   // @include heading-fs-12-mixin-max-xs();
 }
 
