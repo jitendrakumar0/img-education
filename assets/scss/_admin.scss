@@ -1,0 +1,530 @@
+.adminfluid{
+    background-color: $gray-200;
+    & .leftpartcontainer{
+        background-color: $white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .listcontainer{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            & .leftpartul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+                & .leftpartli{
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    position: relative;
+                    transition: 0.3s ease;
+                    &.active, &:hover{
+                        & .adminleftanchor{
+                            & span{
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 35px;
+                                    left: -20px;
+                                    border-left: 3px solid $theme1;
+                                }
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    & .adminleftanchor{
+                        text-decoration: none;
+                        & img{
+                            height: 20px;
+                            margin-right: 10px;
+                            filter: brightness(0);
+                        }
+                        & span{
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $gray-600;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .rightpartcontainer{
+        & .personal{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        & .progressheading{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .mybar{
+            height: 5px !important;
+            margin-top: 8px;
+        }
+        & .textareacontainer{
+            border-radius: 5px;
+            & .txtclass{
+                width: 100%;
+                height: 200px;
+                margin-top: 10px;
+                padding-left: 10px;
+                border-color: $gray-200;
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+            }
+        }
+        & .inputcontainer{  
+            width: 100%;
+            height: 200px;
+            background-color: $white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-top: 10px;
+            border-radius: 5px;
+            & .inpclass{
+                border: 2px solid $gray-200;
+                border-color: $gray-200;
+            }
+            & .inplabel{
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & img{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+        & .formcontainer{
+            border: 2px solid $gray-200;
+            background-color: $white;
+            border-radius: 5px ;
+            margin-top: 10px;
+            padding: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            & .toptxt{
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            & .bottomtxt{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            & .editicon{
+                height: 20px;
+                margin-top: 10px;
+            }
+            & .mycollapse{
+                & .mycardbody{
+                    & .form-control{
+                        box-shadow: none !important;
+                        border-color: $gray-200 !important;
+                    }
+                }
+            }
+        }
+        & .socialheading{
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        & .socialcontainer{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            & .socialiconscontainer{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: $white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & img{
+             
+                }
+            }
+            & .form-control{
+                box-shadow: none !important;
+                border-color: $gray-200;
+            }
+        }
+        & .adminbottombtncontainer{
+            margin-top: 20px;
+            & .savebtn{
+                & .savebtnnnn{
+                    background: linear-gradient(to right, $theme1, $theme2);
+                    border: none;
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                }
+            }
+            & .deletebtn{
+                display: flex;
+                justify-content: end;
+                & .deletebtnnnn{
+                    background: linear-gradient(to right, $theme1, $theme2);
+                    border: none;
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.adminoffcanvaasmain{
+    width: 300px !important;
+    & .offcanvas-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0 !important;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .closebtnnnn{
+            position: absolute;
+            right: 8%;
+            top:10%;
+            & img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    & .adminoffcanvas{
+        padding-top: 0 !important;
+        & .leftpartcontainer{
+            background-color: $white;
+            // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 0px 20p 20px 20px;
+            & .listcontainer{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                & .leftpartul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 10px;
+                    & .leftpartli{
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                        padding: 4px;
+                        position: relative;
+                        transition: 0.3s ease;
+                        &.active, &:hover{
+                            & .adminleftanchor{
+                                & span{
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        width: 2px;
+                                        height: 35px;
+                                        left: -20px;
+                                        border-left: 3px solid $theme1;
+                                    }
+                                    color: $theme1 !important;
+                                }
+                            }
+                        }
+                        & .adminleftanchor{
+                            text-decoration: none;
+                            & img{
+                                height: 20px;
+                                margin-right: 10px;
+                                filter: brightness(0);
+                            }
+                            & span{
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: $gray-600;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer{
+        padding: 10px;
+        & .leftpartli{
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 4px;
+            position: relative;
+            transition: 0.3s ease;
+            &.active, &:hover{
+                & .adminleftanchor{
+                    & span{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 2px;
+                            height: 35px;
+                            left: -20px;
+                            border-left: 3px solid $theme1;
+                        }
+                        color: $theme1 !important;
+                    }
+                }
+            }
+            & .adminleftanchor{
+                text-decoration: none;
+                & img{
+                    height: 20px;
+                    margin-right: 10px;
+                    filter: brightness(0);
+                }
+                & span{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+// 
+.adminfluidforpasswordsecurity{
+    & .leftpartcontainer{
+        background-color: $white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+        & .lefttopcontainer{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            & .adminprofilecontainer{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .adminname{
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $gray-600;
+            }
+            & .admincontact{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $gray-600;
+                }
+            }
+            & .adminmail{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                & span{
+                    color: $gray-600;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .listcontainer{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            & .leftpartul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+                & .leftpartli{
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    position: relative;
+                    transition: 0.3s ease;
+                    &.active, &:hover{
+                        & .adminleftanchor{
+                            & span{
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 35px;
+                                    left: -20px;
+                                    border-left: 3px solid $theme1;
+                                }
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    & .adminleftanchor{
+                        text-decoration: none;
+                        & img{
+                            height: 20px;
+                            margin-right: 10px;
+                            filter: brightness(0);
+                        }
+                        & span{
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $gray-600;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+& .rightpartcontainer{
+    & .passwordheading{
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    & .passwordsubheading{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    & .thirdheading{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    & .form-label{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    & .form-control{
+        box-shadow: none !important;
+        border-color: $gray-200;
+    }
+}
+}
