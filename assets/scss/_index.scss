@@ -1121,8 +1121,8 @@
 // top courses section
 .topcoursesbg{
     background-image: url(../img/homebackground.webp);
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-size: cover;
     & .topcoursebtncontainer{
         margin-top: 30px;
         display: flex;
