@@ -17,7 +17,7 @@
                 &:hover .imgoverlay{
                     display: block;
                 }
-                position: relative;
+                // position: relative;
                 & .datecontainer{
                     background-color: lighten($color: $orange, $amount: 10);
                     padding: 10px 25px;
@@ -85,9 +85,9 @@
             & .searchimg{
                 position: absolute;
                 right: 2%;
-                top:25%;
-                width: 20px;
-                height: 20px;
+                top:31%;
+                // width: 20px;
+                height: 15px;
             }
         }
         & .sideheading{
@@ -203,7 +203,7 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
-        margin-top: 15px;
+        // margin-top: 15px;
         & img{
             width: 100%;
             height: 100%;
@@ -407,10 +407,10 @@
         }
     }
     & .rowright{
-        margin-left: 80px;
+        margin-left: 50px;
         background-color: $gray-200;
         border-radius: 0px 25px 0px 25px;
-        width: 80%;
+        // width: 80%;
     }
     & .reply{
         font-size: 14px;
@@ -1938,7 +1938,8 @@
         & .disc{
         }
         & .rowright{
-           
+            // width: 100% !important;
+            margin-left: unset !important;
         }
         & .reply{
             

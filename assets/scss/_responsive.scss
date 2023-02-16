@@ -19,6 +19,8 @@
   @include aboutAnimBox-mixin-min-sm();
   @include productlistingfluid-mixin-min-sm();
   @include productdetailfluid-mixin-min-sm();
+  @include blogdetailfluid-mixin-min-sm();
+  @include retatedCoursePage-mixin-min-sm();
 
   // @include heading-fs-12-mixin-min-sm();
 }
@@ -41,6 +43,8 @@
   @include aboutAnimBox-mixin-min-md();
   @include productlistingfluid-mixin-min-md();
   @include productdetailfluid-mixin-min-md();
+  @include blogdetailfluid-mixin-min-md();
+  @include retatedCoursePage-mixin-min-md();
 
   // @include heading-fs-12-mixin-min-md();
 }
@@ -63,6 +67,8 @@
   @include aboutAnimBox-mixin-min-lg();
   @include productlistingfluid-mixin-min-lg();
   @include productdetailfluid-mixin-min-lg();
+  @include blogdetailfluid-mixin-min-lg();
+  @include retatedCoursePage-mixin-min-lg();
 
   // @include heading-fs-12-mixin-min-lg();
 }
@@ -85,6 +91,8 @@
   @include aboutAnimBox-mixin-min-xl();
   @include productlistingfluid-mixin-min-xl();
   @include productdetailfluid-mixin-min-xl();
+  @include blogdetailfluid-mixin-min-xl();
+  @include retatedCoursePage-mixin-min-xl();
 
   // @include heading-fs-12-mixin-min-xl();
 }
@@ -107,6 +115,8 @@
   @include aboutAnimBox-mixin-min-xxl();
   @include productlistingfluid-mixin-min-xxl();
   @include productdetailfluid-mixin-min-xxl();
+  @include blogdetailfluid-mixin-min-xxl();
+  @include retatedCoursePage-mixin-min-xxl();
 
   // @include heading-fs-12-mixin-min-xxl();
 }
@@ -129,6 +139,8 @@
   @include aboutAnimBox-mixin-max-xl();
   @include productlistingfluid-mixin-max-xl();
   @include productdetailfluid-mixin-max-xl();
+  @include blogdetailfluid-mixin-max-xl();
+  @include retatedCoursePage-mixin-max-xl();
 
   // @include heading-fs-12-mixin-max-xl();
 }
@@ -151,6 +163,8 @@
   @include aboutAnimBox-mixin-max-1300();
   @include productlistingfluid-mixin-max-1300();
   @include productdetailfluid-mixin-max-1300();
+  @include blogdetailfluid-mixin-max-1300();
+  @include retatedCoursePage-mixin-max-1300();
 
 }
 
@@ -172,6 +186,8 @@
   @include aboutAnimBox-mixin-max-lg();
   @include productlistingfluid-mixin-max-lg();
   @include productdetailfluid-mixin-max-lg();
+  @include blogdetailfluid-mixin-max-lg();
+  @include retatedCoursePage-mixin-max-lg();
 
   // @include heading-fs-12-mixin-max-lg();
 }
@@ -194,6 +210,10 @@
   @include aboutAnimBox-mixin-max-md();
   @include productlistingfluid-mixin-max-md();
   @include productdetailfluid-mixin-max-md();
+  @include blogdetailfluid-mixin-max-md();
+  @include retatedCoursePage-mixin-max-md();
+
+
 
   // @include heading-fs-12-mixin-max-md();
 }
@@ -216,6 +236,8 @@
   @include aboutAnimBox-mixin-max-sm();
   @include productlistingfluid-mixin-max-sm();
   @include productdetailfluid-mixin-max-sm();
+  @include blogdetailfluid-mixin-max-sm();
+  @include retatedCoursePage-mixin-max-sm();
 
   // @include heading-fs-12-mixin-max-sm();
 }
@@ -238,6 +260,8 @@
   @include aboutAnimBox-mixin-max-xs();
   @include productlistingfluid-mixin-max-xs();
   @include productdetailfluid-mixin-max-xs();
+  @include blogdetailfluid-mixin-max-xs();
+  @include retatedCoursePage-mixin-max-xs();
 
   // @include heading-fs-12-mixin-max-xs();
 }

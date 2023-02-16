@@ -474,10 +474,11 @@
             border-radius: 5px;
             padding: 10px;
             width: 100%;
+            line-height: normal;
             & img{
                 width: 15px;
                 height: 15px;
-                margin-right: 8px;
+                margin-right: 6px;
             }
         }
         & .btnnnnnnn2{
@@ -492,7 +493,7 @@
             & img{
                 width: 15px;
                 height: 15px;
-                margin-right: 8px;
+                margin-right: 6px;
             }
         }
     }
@@ -759,6 +760,28 @@
                 height: 1px;
                 background-color: $gray-400;
                 margin-top: 20px;
+            }
+            & .comment{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            & .form-control{
+                box-shadow: none !important;
+                border:1px solid $gray-500
+            }
+            & .txtarea{
+                border: 1px solid $gray-500;
+                border-radius: 5px;
+                padding-left: 10px;
+            }
+            & .postbtn{
+                border: none;
+                background-color: $theme1;
+                color: $white;
+                font-size: 12px;
+                border-radius: 5px;
+                padding: 8px 16px;
             }
     }
 }
@@ -2821,9 +2844,9 @@
                 }
                 & .tab1{
                     & .tabimgcontainer{
-                       
+                        height: 100% ;
                         & img{
-                           
+                       
                         }
                     }
                     & .tabtxtpart{
@@ -2883,14 +2906,15 @@
                     }
                 }
                 & .reviewimgggcontainer{
-                   
+                    width: 50px;
+                    height: 50px;
                     & img{
                         
                     }
                 }
                 & .rytpart{
                     & .one{
-                        
+                        font-size: 15px;
                         & .spanclass{
                             & .teacherreview{
                                 & .reviewul{

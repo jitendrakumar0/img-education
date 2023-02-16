@@ -81,13 +81,14 @@
             position: relative;
 
             & .heroleftbtn{
-                background: linear-gradient(to right, $theme1, $theme2);
+                // background: linear-gradient(to right, $theme1, $theme2);
+                background-color: $theme1;
                 border: none;
                 border-radius: 5px;
                 color: $white;
                 font-size: 15px;
                 font-weight: 600;
-                padding: 15px 30px;
+                padding: 13px 33px;
                 margin-top: 20px;
             }
             
@@ -616,9 +617,9 @@
         }
     }
     & .categorymainheading{
-        font-size: 35px;
+        font-size: 32px;
         font-weight: 700;
-        margin-top: 20px;
+        // margin-top: 20px;
         margin-bottom: 30px;
         text-align: center;
         line-height: normal;
@@ -1045,7 +1046,7 @@
         & .categorymainheading{
             
             font-size: 22px !important;
-            margin-top: 30px !important;
+            margin-bottom: 10px !important;
         }
     }
     .cardcontainer{
@@ -1085,7 +1086,7 @@
         }
         & .categorymainheading{
             font-size: 24px!important;
-            margin-top: 30px !important;
+            // margin-top: 30px !important;
             
         }
     }
@@ -1124,7 +1125,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     & .topcoursebtncontainer{
-        margin-top: 30px;
+        // margin-top: 30px;
         display: flex;
         flex-direction: column;
         & .topcoursebtn{
@@ -1139,10 +1140,12 @@
     & .topcoursemainhead{
         font-size: 50px;
         font-weight: 700;
-        margin-top: 20px;
+        margin-bottom: 30px;
     }
     & .cardborder{
         padding: 10px 10px 0px 10px !important;
+        text-decoration: none;
+        color: $gray-600;
         & .lessonsandpeoplecontainer{
             padding-top: 10px;
             & .lessons{
@@ -1890,7 +1893,7 @@
             }
         }
         & .topcoursemainhead{
-            font-size: 35px !important;
+            font-size: 32px !important;
             font-weight: 700 !important;
         }
         & .cardborder{
@@ -2558,6 +2561,7 @@
         & .topcoursemainhead{
             font-size: 24px !important;
             font-weight: 700 !important;
+            margin-bottom: 10px !important;
         }
         & .cardborder{
             
@@ -2839,7 +2843,7 @@
 .chooseusfluid{
     background-image: url(../img/homebackground.webp);
     background-repeat: no-repeat;
-    margin-top: 50px;
+    // margin-top: 50px;
     & .colafter{
         
     }
@@ -2890,7 +2894,7 @@
             justify-content: center;
             align-items: center;
             background-color: $white;
-            animation: hang 2s infinite linear;
+            // animation: hang 2s infinite linear;
             & .hanginginpiccontainer{
                 width: 100px;
                 height: 100px;
@@ -2914,8 +2918,8 @@
                 margin-bottom: 10px;
             }
             & .hangingcardbottom{
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 500;
                 color: $gray-600;
             }
         }
@@ -2927,7 +2931,7 @@
             justify-content: center;
             align-items: center;
             background-color: $white;
-            animation: hang 2s infinite linear;
+            // animation: hang 2s infinite linear;
             // &::before{
             //     content: "";
             //     width: 3px;
@@ -2973,8 +2977,8 @@
                 margin-bottom: 10px;
             }
             & .hangingcardbottom{
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 500;
                 color: $gray-600;
             }
         }
@@ -3145,6 +3149,7 @@
                
             }
             & .hangingcard{
+            animation: hang 2s infinite linear;
                
                 &::before{
                     
@@ -3166,6 +3171,7 @@
                 }
             }
             & .hangingcardd{
+            animation: hang 2s infinite linear;
                 
                 &::before{
                     
@@ -3680,8 +3686,8 @@
                         
                     }
                     & .eventdate{
-                        width: 75px;
-                        height: 70px;
+                        width: 90px;
+                        height: 40px;
                         border-radius: 5px;
                         background-color: $white;
                         z-index: 999;
@@ -5450,8 +5456,11 @@
     }
 }
 @mixin ourteacherssechtion-mixin-max-xs(){  
+    body {      
+        background-color: red;
+    }
     .topteachersfluid{
-   
+    display: none !important;
         & .teambg{
             
             & .teamcontainer{
@@ -5487,7 +5496,7 @@
                 overflow:hidden;
                 // Addition lines for 2 line or multiline ellipsis
                 display: -webkit-box !important;
-                -webkit-line-clamp: 9;
+                -webkit-line-clamp: 9 !important;
                 -webkit-box-orient: vertical;
                 white-space: normal;
               }
@@ -5601,7 +5610,7 @@
     // background-image: url(../img/homebackground.webp);
     background-image: url(../img/newsbg.png);
     & .newsletterheading{
-            font-size: 50px;
+            font-size: 32px;
             font-weight:600;
             color: $black;
             text-align: center;
@@ -5619,7 +5628,8 @@
             border: none;
     }
     & .newsbtn{
-            background-image: linear-gradient(to right, $theme1, $theme2);
+            // background-image: linear-gradient(to right, $theme1, $theme2);
+            background-color: $theme1;
             border: 1px solid $gray-200;
             padding: 16px 16px;
             color: $white;
@@ -5860,7 +5870,7 @@
     .newsletterfluid{
    
         & .newsletterheading{
-                font-size: 30px;
+                font-size: 24px;
         }
         
         & .letterinp{
@@ -6476,7 +6486,7 @@
     // height: 100%;
     width: 100%;
     & .detailherocontainer{
-        margin: 0 !important;
+        // margin: 0 !important;
         padding-top: 80px;
         & .heromainheading{
             font-size: 40px;
@@ -6580,7 +6590,52 @@
             }
         }
     }
-    
+    & .coursedetailrytpartcontainer{
+        border: 1px solid $gray-400;
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        background-color: $white;
+        margin: auto;
+        & .righttoptxt{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            & img{
+                margin-right: 8px;
+                height: 30px;
+            }
+            & span{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+        }
+        & .enrollbtn{
+                border: none;
+                background-color: $theme1;
+                border-radius: 5px;
+                color: $white;
+                padding: 10px;
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 8px;
+        }
+        & .progresscontainerrr{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        & .progress{
+                height: 8px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+        }
+        & .people{
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+    }
 }
 
 @mixin coursedetailherosectionn-mixin-min-sm(){
@@ -7323,11 +7378,11 @@
 
  
 .leftdatacontainer{
-        padding: 10px;
+        padding: 12px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid;
+        border: 1px solid $gray-300;
         background-color: $white;
         border-radius: 5px;
         & .playbutton{
@@ -7425,8 +7480,9 @@
         }
     }
     & .bottomtxtsize{
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 500;
+            color: $gray-700;
     }
     & .divider{
         width: 100%;
@@ -7901,9 +7957,9 @@
                 background-position: right 10px top 50%;
                 width: 100%;
                 text-align: start;
-                &.active{
+                &:active{
                     border:none !important;
-                    border-color: none !important;
+                    box-shadow: none !important;
                 }
                 &:not(.collapsed){
                     background-image: url(../img/icons8-subtract-30.png);
