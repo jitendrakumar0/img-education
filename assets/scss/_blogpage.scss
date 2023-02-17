@@ -133,6 +133,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 8px 8px 8px 8px;
+                &:hover{
+                    filter: brightness(1.1);
+                }
             }
         }
         & .head1{
@@ -186,6 +189,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 5px;
+                &:hover{
+                    filter: brightness(1.1);
+                }
             }
         }
     }
@@ -301,6 +307,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 8px 8px 8px 8px;
+                &:hover {
+                    filter: brightness(1.1);
+                }
             }
         }
         & .head1{
@@ -354,6 +363,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 5px;
+                &:hover {
+                    filter: brightness(1.1);
+                }
             }
         }
     }
@@ -361,6 +373,7 @@
         font-size: 15px;
         font-weight: 500;
         color: $gray-600;
+        text-align: justify;
     }
     & blockquote{
         border-left: 2px solid;
@@ -431,8 +444,6 @@
         font-size: 14px;
         font-weight: 500;
         height: 200px !important;
-        margin-top: 10px;
-        margin-bottom: 10px;
         border-radius: 5px;
         padding-left: 10px;
     }
@@ -1930,19 +1941,164 @@
             }
         }
         & .stdname{
-            
+            font-size: 12px !important;
         }
         & .month{
+            font-size: 12px !important;
             
         }
         & .disc{
         }
         & .rowright{
-            // width: 100% !important;
+            width: 100% !important;
             margin-left: unset !important;
         }
         & .reply{
             
+        }
+        & .leave{
+           
+        }
+        & .form-control{
+            
+        }
+        & .txtarea{
+            
+        }
+        & .submitbtn{
+            
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .blogdetailfluid{
+    
+        & .sideheading{
+           
+        }
+        & .detailtopimg{
+            
+            & img{
+               
+            }
+        }
+        & .daateautocontainerr{
+            & .dateauto{
+               
+                & span{
+                   
+                }
+            }
+        }
+        & .txtcontainer{
+            & .txt1{
+                
+            }
+            & .imgicon{
+               
+            }
+            & span{
+                
+            }
+        }
+        & .sidecontainer{
+            & .formclass{
+                & .forminp{
+                    
+                }
+                & .searchimg{
+                   
+                }
+            }
+            & .sideheading{
+               
+            }
+            & .directorinfo{
+                
+                & .directorimgcontainer{
+                    
+                    & img{
+                        
+                    }
+                }
+                & .dname{
+                        
+                }
+                & .paraaa{
+                       
+                }
+            }
+            & .sideimgcontainer{
+                
+                
+                & img{
+                    
+                }
+            }
+            & .head1{
+                   
+            }
+            & .sub{
+                
+                &.text-ellipsis--2{
+                    
+                }
+            }
+            & .border{
+                
+            }
+            & .popul{
+                
+                & .popli{
+                    
+                    & .popanchor{
+                        
+                    }
+                }
+            }
+            & .instaimgcontainer{
+               
+                & img{
+                   
+                }
+            }
+        }
+        & .paragraph1{
+           
+        }
+        & blockquote{
+           
+        }
+        & .commentimgcontainer{
+            height: 40px;
+            width: 40px;
+            & img{
+                
+            }
+        }
+        & .stdname{
+            font-size: 13px !important;
+        }
+        & .month{
+            font-size: 12px !important;
+            
+        }
+        & .disc{
+            font-size: 12px;
+        }
+        & .rowright{
+            width: 100% !important;
+            margin-left: unset !important;
+            & .col-auto {
+                &> img {
+                    height: 16px;
+                    margin-right: 3px;
+                }
+            }
+        }
+        & .reply{
+            font-size: 12px;
         }
         & .leave{
            
